@@ -1,26 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TV Unit Gallery</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Furniture Gallery</title>
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<h1>📺 TV Unit Gallery</h1>
+<header>
+    <!-- Category Dropdown -->
+    <select id="categorySelect">
+        <option value="tv_unit">TV Unit</option>
+        <option value="sofa">Sofa</option>
+        <option value="bed">Bed</option>
+    </select>
+</header>
 
 <div class="container" id="products"></div>
 
-<!-- Image Modal -->
+<!-- Modal -->
 <div id="imageModal" class="modal">
     <span class="close">&times;</span>
-    <img class="modal-content" id="modalImg">
+    <img id="modalImg" class="modal-content">
 </div>
 
-<!-- JS -->
 <script src="script.js"></script>
 
 </body>
